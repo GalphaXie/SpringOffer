@@ -1,0 +1,11 @@
+plugins {
+    id 'com.company.java-library-conventions'
+}
+
+dependencies {
+    implementation 'com.github.xiaoymin:knife4j-spring-boot-starter:3.0.3'
+
+    implementation project(':orm')
+    implementation project(':common')
+
+}

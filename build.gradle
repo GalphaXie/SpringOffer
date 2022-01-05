@@ -1,0 +1,4 @@
+def versionText = file('.version').text.trim()
+allprojects {
+    version = versionText
+}

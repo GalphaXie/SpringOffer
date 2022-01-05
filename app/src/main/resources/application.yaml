@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.102.192.55:8848 #注册中心地址
+
+    loadbalancer:
+      ribbon:
+        enabled: false
+      cache:
+        enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_offer?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1qa2ws3ed
+
+server:
+  port: 17357
+
+# mapper.xml文件位置
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.company.entity
+
+
+knife4j:
+  enable: true
